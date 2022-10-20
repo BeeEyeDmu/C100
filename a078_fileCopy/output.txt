@@ -1,0 +1,7 @@
+void fileCopy(FILE* ifp, FILE* ofp)
+{
+	int c;
+
+	while ((c = fgetc(ifp)) != EOF)
+		fputc(c, ofp);
+}
